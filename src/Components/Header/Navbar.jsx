@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     
-                    <a className="mr-20 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white "><img src="/public/github-mark-white.png" className='w-[30px] ' alt="" /> Contribute</a>
+                    <a className="mr-20 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white "><img src="/github-mark-white.png" className='w-[30px] ' alt="" /> Contribute</a>
                 </div>
             </div>
         </div>
