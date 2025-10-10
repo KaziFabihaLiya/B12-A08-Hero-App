@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Banner = () => {
+
+    
     return (
         <div className='w-full  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] justify-center text-center text-white'>
             <h2 className='pt-20 pb-10 text-5xl font-bold'>Trusted by Millions, Built for You</h2>

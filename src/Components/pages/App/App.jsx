@@ -1,11 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const App = ({app}) => {
-    console.log(app)
+    console.log('testing', app)
+    const {image, title, description, downloads, ratingAvg, id} = app;
     return (
-        <div>
-            <h1>{app.title}</h1>
-        </div>
+        <Link to={`/appDetails/${id}`}>
+            <div className="card bg-base-100 shadow-sm pt-3 px-3">
+                <figure>
+                    <img className='w-full rounded-sm px-3'
+                    src={image}
+                    alt="Shoes" />
+                </figure>
+                <div className="card-body p-0">
+                    <div className="flex items-center justify-left text-left px-[12px] pt-[16px]">
+                        <h2 className="text-sm font-semibold">
+                            {title}: <span className="font-normal">{description}</span>
+                        </h2>
+                    </div>
+            
+                    <div className="card-actions rounded-sm justify-between px-[12px] pb-[16px]">
+                        <div className="btn text-[#00D390] bg-[#F1F5E8]"><img className='w-4' src="/icon-downloads.png" alt="" />{downloads}M</div>
+                        <div className="btn text-[#FF8811] bg-[#FFF0E1]"><img className='w-4' src="/public/icon-ratings.png" alt="" />{ratingAvg}</div>
+                    </div>
+                </div>
+            </div>
+        </Link>
     );
 };
 

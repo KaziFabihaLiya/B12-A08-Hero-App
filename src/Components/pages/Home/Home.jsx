@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Hero from '../../Hero/Hero';
 import Banner from '../../Banner/Banner';
 import Apps from '../Apps/Apps';
+import { useLoaderData } from 'react-router';
 
-const fetchDataPromise = () => fetch('/appData.json').then(res=>res.json())
 const Home = () => {
 
-     
+    const data = useLoaderData();
+    console.log(data)
     return (
         <div>
             <Hero></Hero>
-            <Banner></Banner>
-            <Apps fetchDataPromise={fetchDataPromise}></Apps>
+            <Banner data={data}></Banner>
+
+            <Apps data={data}></Apps>
+
         </div>
     );
 };
