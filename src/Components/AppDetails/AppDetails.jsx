@@ -3,6 +3,7 @@ import { Link, useLoaderData, useParams } from 'react-router';
 import { addToStoreDB } from '../../utilities/addToDB';
 import formatNumber from '../../utilities/formatNumber';
 import InstalledList from '../pages/InstalledList/InstalledList';
+import Description from '../pages/Description/Description';
 
     
 const AppDetails = () => {
@@ -67,14 +68,13 @@ const AppDetails = () => {
             <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
                 
             </div>
-            <div>
-                <h2>Description</h2>
+            <div className='mx-20 pb-10 mt-10'>
+                <h2 className='font-semibold text-2xl mb-6'>Description</h2>
                 <div>
                 {
-                    description.map((para, index) =>{
-                    <p key={index}>{para[`para${index + 1}`]}</p> //para1,para2,para3 ke access korlam
-                })
-                }</div>
+                    description.map(des => <Description des={des}></Description>)//para1,para2,para3 ke access korlam
+                }
+                </div>
             </div>
 
         </div>

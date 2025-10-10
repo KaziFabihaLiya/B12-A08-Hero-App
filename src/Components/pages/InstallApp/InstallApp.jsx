@@ -6,7 +6,7 @@ const InstallApp = ({app}) => {
 
     //Installed Each App card
 
-    const {image, title, description, downloads, ratingAvg, size} = app;
+    const {image, title, slogan, downloads, ratingAvg, size} = app;
     return (
         <div>
             <div className="bg-white shadow-sm flex items-center justify-between p-3 border-gray-200">
@@ -21,7 +21,7 @@ const InstallApp = ({app}) => {
                     <div className="p-0 flex flex-col">
                         <div className="flex flex-row items-center justify-center text-left px-[12px] ml-3 mt-1">
                             <h2 className="text-xl font-medium">
-                                {title}: <span className="font-normal">{description}</span>
+                                {title}: <span className="font-normal">{slogan}</span>
                             </h2>
                         </div>
                         <div className="rounded-sm flex flex-row items-center px-[12px] gap-3 ml-3">
