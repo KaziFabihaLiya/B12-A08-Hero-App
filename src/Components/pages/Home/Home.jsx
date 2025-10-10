@@ -4,17 +4,16 @@ import Banner from '../../Banner/Banner';
 import Apps from '../Apps/Apps';
 import { useLoaderData } from 'react-router';
 
-const Home = () => {
 
+const Home = () => {
+    //home page
     const data = useLoaderData();
     console.log(data)
     return (
         <div>
             <Hero></Hero>
             <Banner data={data}></Banner>
-
             <Apps data={data}></Apps>
-
         </div>
     );
 };

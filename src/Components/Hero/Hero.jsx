@@ -3,6 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
         <>
+        {/* Hero Section */}
             <div className='mx-auto w-6xl'>
                 <h1 className='text-7xl font-bold text-center mb-4 mt-20'>We Build<br></br><span className='text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] '>Productive</span> Apps</h1>
                 <p className='text-center text-[#627382] text-xl font-normal whitespace-nowrap'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br></br>Our goal is to turn your ideas into digital experiences that truly make an impact.</p>

@@ -1,7 +1,14 @@
 import { Github } from 'lucide';
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
+
+    const links = <>
+        <Link to='/'><li className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">Home</li></Link>
+        <Link to='/allapps'><li>Apps</li></Link>
+        <Link to='/installedList'><li>Installation</li></Link>
+    </>
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm mx-auto">
@@ -13,27 +20,16 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li>
-                        <a>Apps</a>
-                        </li>
-                        <li><a>Installation</a></li>
+                        {links}
+                        
                     </ul>
                     </div>
                     <img src="/logo.png" className='w-[3.5rem] pl-[20px]' alt="" />
                     <a className="btn btn-ghost font-bold pl-1 bg-clip-text text-transparent text-base bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">HERO.IO</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                    <li>
-                        <a><span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>Home</span></a>
-                    </li>
-                    <li>
-                        <a>Apps</a>
-                    </li>
-                    <li>
-                        <a>Installation</a>
-                    </li>
+                    <ul className="menu menu-horizontal px-1 gap-4">
+                        {links}
                     </ul>
                 </div>
                 <div className="navbar-end">

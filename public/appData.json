@@ -4,7 +4,18 @@
     "title": "WhatsApp Messenger",
     "companyName": "Meta Platforms, Inc.",
     "id": 1,
-    "description": "Simple. Reliable. Secure. - Messaging and calling app",
+    "description": [
+      {
+        "para1": "Simple. Reliable. Secure. - Messaging and calling app. WhatsApp Messenger is your go-to app for staying connected with friends, family, and colleagues around the world. With end-to-end encryption ensuring your messages remain private, you can send texts, voice notes, photos, videos, and documents without worry. Whether you're sharing a quick update or planning a group event, WhatsApp makes communication effortless and secure."
+      },
+      {
+        "para2": "Discover the power of group chats and broadcasts, where you can connect with up to 1024 people at once. Make crystal-clear voice and video calls over Wi-Fi or data, even internationally, without extra costs. Customize your experience with stickers, GIFs, and themes to make every conversation uniquely yours."
+      },
+      {
+        "para3": "Join billions of users who trust WhatsApp for its reliability and simplicity. From business tools like WhatsApp Business to fun features like disappearing messages, there's something for everyone. Download today and experience seamless messaging like never before."
+      }
+    ],
+    "slogan": "Connect Instantly, Privately",
     "size": 45,
     "reviews": 2500000,
     "ratingAvg": 4.3,
@@ -22,7 +33,18 @@
     "title": "Instagram",
     "companyName": "Instagram, Inc.",
     "id": 2,
-    "description": "Create & share photos, stories, and reels with friends",
+    "description": [
+      {
+        "para1": "Create & share photos, stories, and reels with friends. Instagram is the ultimate platform for visual storytelling, where creativity knows no bounds. Capture life's moments through stunning photos and videos, then enhance them with filters, effects, and music to make them pop. Share your feed with followers or keep it private for close circles—it's all about expressing yourself on your terms."
+      },
+      {
+        "para2": "Dive into Stories and Reels to connect in real-time, with interactive features like polls, questions, and AR effects that keep your audience engaged. Explore trending content, discover new creators, and join global conversations through hashtags and Explore. Whether you're a hobbyist or influencer, Instagram amplifies your voice."
+      },
+      {
+        "para3": "Build meaningful connections by following passions, from fashion to food, travel to tech. Collaborate on IGTV for longer videos or go live to broadcast unfiltered moments. With billions of users, Instagram isn't just an app—it's a vibrant community waiting for your unique perspective."
+      }
+    ],
+    "slogan": "Capture Life's Moments",
     "size": 120,
     "reviews": 1800000,
     "ratingAvg": 4.1,
@@ -40,7 +62,18 @@
     "title": "TikTok",
     "companyName": "TikTok Pte. Ltd.",
     "id": 3,
-    "description": "Make TikTok videos with effects and music",
+    "description": [
+      {
+        "para1": "Make TikTok videos with effects and music. TikTok turns your everyday moments into viral sensations with its intuitive video creation tools. Record short clips, layer on trending sounds, and unleash creativity with millions of effects, stickers, and transitions. From dance challenges to life hacks, the For You Page curates endless inspiration tailored just for you."
+      },
+      {
+        "para2": "Join a global community of creators and viewers, where duets, stitches, and collaborations spark joy and connection. Learn new skills through educational content or unwind with hilarious skits and ASMR. TikTok's algorithm ensures you never run out of fresh, addictive videos that match your vibe."
+      },
+      {
+        "para3": "Monetize your passion with TikTok Creator Fund or live gifts, while brands and businesses thrive on targeted ads. With features like green screen and speed controls, anyone can produce pro-level content from their phone. Step into the world of TikTok and let your imagination run wild."
+      }
+    ],
+    "slogan": "Create, Share, Go Viral",
     "size": 200,
     "reviews": 3200000,
     "ratingAvg": 4.4,
@@ -58,7 +91,18 @@
     "title": "Facebook",
     "companyName": "Meta Platforms, Inc.",
     "id": 4,
-    "description": "Connect with friends and the world around you",
+    "description": [
+      {
+        "para1": "Connect with friends and the world around you. Facebook brings the world closer by letting you reconnect with old friends, discover new ones, and share life's big moments. Post updates, photos, and videos on your timeline, or join groups to discuss hobbies, news, and causes that matter to you. With a simple interface, staying in touch has never been easier."
+      },
+      {
+        "para2": "Explore Marketplace for local buys and sells, or use Messenger for private chats and video calls. Events help you plan gatherings, while Pages keep you updated on favorite brands and celebrities. Facebook's vast network fosters real relationships, from family reunions to professional networking."
+      },
+      {
+        "para3": "Stay informed with personalized News Feed, featuring stories from friends and trusted sources. Privacy controls ensure you share on your terms, while features like Reactions add nuance to interactions. Join over 3 billion users and weave your story into the fabric of the global community."
+      }
+    ],
+    "slogan": "Stay Connected Worldwide",
     "size": 150,
     "reviews": 2100000,
     "ratingAvg": 3.9,
@@ -76,7 +120,18 @@
     "title": "YouTube",
     "companyName": "Google LLC",
     "id": 5,
-    "description": "Watch, listen, stream",
+    "description": [
+      {
+        "para1": "Watch, listen, stream. YouTube is the world's largest video platform, offering endless entertainment, education, and inspiration at your fingertips. From blockbuster movies to DIY tutorials, discover channels that match every interest. Subscribe to stay updated and build your watchlist for binge-worthy sessions anytime."
+      },
+      {
+        "para2": "Create your own content with the built-in editor, adding music, text, and effects to captivate audiences. Go live to interact in real-time or upload Shorts for quick, viral clips. YouTube's recommendation engine surfaces hidden gems, ensuring you'll always find something new and exciting."
+      },
+      {
+        "para3": "Earn from your passion through the Partner Program, ads, and Super Chats. Families can enjoy kid-friendly content via YouTube Kids, while Premium subscribers unlock ad-free viewing and offline downloads. Dive into the YouTube universe and let videos shape your world."
+      }
+    ],
+    "slogan": "Watch What You Love",
     "size": 80,
     "reviews": 4500000,
     "ratingAvg": 4.2,
@@ -94,7 +149,18 @@
     "title": "Spotify",
     "companyName": "Spotify AB",
     "id": 6,
-    "description": "Music for everyone",
+    "description": [
+      {
+        "para1": "Music for everyone. Spotify revolutionizes how you discover and enjoy music, podcasts, and audiobooks with personalized playlists and recommendations. Stream over 100 million tracks and episodes ad-free with Premium, or explore for free with shuffle mode. Create collaborative playlists with friends for the ultimate shared listening experience."
+      },
+      {
+        "para2": "Uncover new artists through Discover Weekly and Release Radar, tailored to your tastes. Download for offline playback during commutes or workouts, and connect Spotify to your devices for seamless multi-room audio. From chart-toppers to underground gems, Spotify's vast library has a soundtrack for every mood."
+      },
+      {
+        "para3": "Join Spotify Wrapped to relive your year in music, and use features like Lyrics and Canvas for immersive listening. Podcasts cover true crime to comedy, while audiobooks add depth to your routine. With Spotify, music isn't just heard—it's felt, shared, and endlessly discovered."
+      }
+    ],
+    "slogan": "Music for Every Mood",
     "size": 65,
     "reviews": 1200000,
     "ratingAvg": 4.5,
@@ -112,7 +178,18 @@
     "title": "Netflix",
     "companyName": "Netflix, Inc.",
     "id": 7,
-    "description": "Watch TV shows and movies",
+    "description": [
+      {
+        "para1": "Watch TV shows and movies. Netflix transforms entertainment with its vast library of original series, blockbuster films, and documentaries, all streaming in stunning quality. Binge-watch your favorites or discover hidden gems through personalized recommendations based on your viewing history. From thrillers to rom-coms, there's a genre for every night in."
+      },
+      {
+        "para2": "Create multiple profiles for family members, each with tailored suggestions and watchlists. Download titles for offline viewing during travel, and enjoy seamless playback across devices. Netflix's innovative storytelling, like interactive episodes, keeps you hooked with fresh twists on classic formats."
+      },
+      {
+        "para3": "Explore global content with subtitles in multiple languages, or dive into anime, reality TV, and kids' shows. Join discussions in fan communities or rate titles to refine your feed. With Netflix, entertainment isn't passive—it's an immersive journey into worlds beyond imagination."
+      }
+    ],
+    "slogan": "Unlimited Entertainment",
     "size": 90,
     "reviews": 800000,
     "ratingAvg": 4.0,
@@ -130,7 +207,18 @@
     "title": "Google Maps",
     "companyName": "Google LLC",
     "id": 8,
-    "description": "Navigate and explore",
+    "description": [
+      {
+        "para1": "Navigate and explore. Google Maps empowers you to navigate the world with precision, offering turn-by-turn directions for driving, walking, cycling, or public transit. Real-time traffic updates, street view, and satellite imagery make planning trips a breeze, whether local errands or cross-country adventures."
+      },
+      {
+        "para2": "Discover nearby restaurants, attractions, and services with user reviews, photos, and ratings. Share locations instantly with friends, or save favorites for later. Offline maps ensure you're never lost, even without signal, while eco-friendly routing minimizes your carbon footprint."
+      },
+      {
+        "para3": "Contribute to the community by adding photos or updating info, earning points and badges. Integrate with Google Assistant for voice-guided navigation, and explore immersive Street View tours of landmarks. With Google Maps, the world is not just a destination—it's an open book ready to unfold."
+      }
+    ],
+    "slogan": "Navigate with Ease",
     "size": 110,
     "reviews": 3000000,
     "ratingAvg": 4.3,
@@ -148,7 +236,18 @@
     "title": "Snapchat",
     "companyName": "Snap Inc.",
     "id": 9,
-    "description": "Share moments that matter",
+    "description": [
+      {
+        "para1": "Share moments that matter. Snapchat captures the ephemerality of life with disappearing photos and videos that vanish after viewing. Add fun filters, lenses, and AR effects to transform ordinary snaps into extraordinary stories, perfect for spontaneous fun with friends."
+      },
+      {
+        "para2": "Chat in real-time with text, voice, or video, and create group Stories for shared memories. Discover curated content on Snap Map, from local events to global trends, while keeping your location private with Ghost Mode. Snapchat's playful interface encourages creativity without the pressure of permanence."
+      },
+      {
+        "para3": "Monetize your Snaps through Spotlight or collaborate with brands for sponsored lenses. From Bitmoji avatars to Snap Games, there's endless entertainment. Snapchat isn't about perfection—it's about authentic, fleeting connections that make every moment sparkle."
+      }
+    ],
+    "slogan": "Fun That Disappears",
     "size": 130,
     "reviews": 900000,
     "ratingAvg": 4.1,
@@ -166,7 +265,18 @@
     "title": "Twitter",
     "companyName": "X Corp.",
     "id": 10,
-    "description": "What's happening",
+    "description": [
+      {
+        "para1": "What's happening. Twitter, now X, is the pulse of the planet, where real-time conversations shape news, culture, and trends. Post thoughts in 280 characters, engage with polls, threads, and Spaces for live audio chats. Follow influencers, journalists, and everyday voices to stay informed and inspired."
+      },
+      {
+        "para2": "Join global discussions with hashtags, retweet viral moments, or quote-tweet with your take. Communities let you dive deep into niches, from tech to sports. X's algorithm surfaces breaking stories and personalized feeds, keeping you ahead of the curve."
+      },
+      {
+        "para3": "Express yourself with emojis, GIFs, and Fleets (ephemeral posts), while premium features unlock longer videos and analytics. From activism to memes, X amplifies voices and sparks change. Tune into what's happening—right now, right here."
+      }
+    ],
+    "slogan": "Join the Conversation",
     "size": 75,
     "reviews": 1500000,
     "ratingAvg": 3.8,
@@ -184,7 +294,18 @@
     "title": "LinkedIn",
     "companyName": "LinkedIn Corporation",
     "id": 11,
-    "description": "Build a recommended profile",
+    "description": [
+      {
+        "para1": "Build a recommended profile. LinkedIn is the professional network empowering career growth, with tools to showcase skills, experience, and achievements. Optimize your profile with endorsements, recommendations, and multimedia to attract recruiters and opportunities. Connect with industry leaders and alumni for meaningful mentorship."
+      },
+      {
+        "para2": "Discover jobs tailored to your expertise, apply with one-click, and track applications seamlessly. Join Learning courses for upskilling in tech, leadership, and more. Engage in Groups and Events to network virtually or in-person, fostering collaborations that advance your goals."
+      },
+      {
+        "para3": "Share articles, insights, and updates to establish thought leadership, while Premium features unlock InMail and insights. From freelancers to executives, LinkedIn turns connections into careers. Build your professional story—one profile at a time."
+      }
+    ],
+    "slogan": "Build Your Career",
     "size": 140,
     "reviews": 600000,
     "ratingAvg": 4.2,
@@ -202,7 +323,18 @@
     "title": "Pinterest",
     "companyName": "Pinterest, Inc.",
     "id": 12,
-    "description": "Discover recipes, home ideas and more",
+    "description": [
+      {
+        "para1": "Discover recipes, home ideas and more. Pinterest is your visual discovery engine, pinning ideas for every aspect of life—from mouthwatering recipes to dreamy home decor. Save Pins to boards, organize by theme, and get inspired by trending collections curated by millions of users worldwide."
+      },
+      {
+        "para2": "Search for style, travel, or DIY projects, with smart recommendations based on your interests. Collaborate on group boards with friends for wedding planning or fitness goals. Pinterest's Lens feature lets you shop or identify items from photos, bridging inspiration to action."
+      },
+      {
+        "para3": "Monetize Pins as a creator or promote products with ads. From seasonal crafts to wellness tips, Pinterest sparks creativity without overwhelm. Turn 'one day' ideas into reality, one Pin at a time."
+      }
+    ],
+    "slogan": "Inspire Your Ideas",
     "size": 95,
     "reviews": 700000,
     "ratingAvg": 4.4,
@@ -220,7 +352,18 @@
     "title": "Amazon Shopping",
     "companyName": "Amazon Mobile LLC",
     "id": 13,
-    "description": "Online shopping app",
+    "description": [
+      {
+        "para1": "Online shopping app. Amazon Shopping redefines convenience, bringing millions of products—from books to gadgets—directly to your pocket. Scan barcodes for price comparisons, read reviews, and checkout with one-tap ordering. Prime members enjoy free shipping and exclusive deals year-round."
+      },
+      {
+        "para2": "Discover personalized recommendations, daily deals, and Subscribe & Save for essentials. Track orders in real-time and manage returns effortlessly. Amazon's vast selection, powered by trusted sellers, ensures quality and variety for every budget."
+      },
+      {
+        "para3": "Voice shop with Alexa integration or explore categories like fashion and electronics. From last-minute gifts to bulk groceries, Amazon makes shopping smarter and faster. Unlock a world of possibilities with every tap."
+      }
+    ],
+    "slogan": "Shop Smarter",
     "size": 160,
     "reviews": 1100000,
     "ratingAvg": 4.6,
@@ -238,7 +381,18 @@
     "title": "Duolingo",
     "companyName": "Duolingo",
     "id": 14,
-    "description": "Learn a language for free",
+    "description": [
+      {
+        "para1": "Learn a language for free. Duolingo makes language learning addictive and effective, with bite-sized lessons in gamified format. Master Spanish, French, or 30+ languages through stories, podcasts, and daily streaks that keep you motivated. Track progress with XP and leaderboards for friendly competition."
+      },
+      {
+        "para2": "Personalized paths adapt to your level, from beginner basics to advanced fluency. Practice speaking, listening, reading, and writing with native audio and AI feedback. Duolingo's owl reminds you gently, turning 'study time' into fun routines."
+      },
+      {
+        "para3": "Join the global classroom for free, or unlock Super Duolingo for ad-free, unlimited hearts. From travel phrases to career boosts, Duolingo opens doors. Start your linguistic adventure today—no textbook required."
+      }
+    ],
+    "slogan": "Learn Languages Fun",
     "size": 55,
     "reviews": 500000,
     "ratingAvg": 4.7,
@@ -256,7 +410,18 @@
     "title": "Candy Crush Saga",
     "companyName": "King",
     "id": 15,
-    "description": "Start playing Candy Crush Saga today",
+    "description": [
+      {
+        "para1": "Start playing Candy Crush Saga today. Candy Crush Saga is the timeless match-3 puzzle that hooks millions with colorful candies and clever challenges. Swap to match three or more, trigger cascades, and use boosters to conquer hundreds of levels. Each stage brings new obstacles and rewards to keep the addiction alive."
+      },
+      {
+        "para2": "Connect with Facebook friends for lives and compete on leaderboards. Daily bonuses and events offer extra chances to progress without spending. King’s charming graphics and upbeat music make every win feel sweet."
+      },
+      {
+        "para3": "From chocolate factories to jelly quests, explore whimsical worlds. Customize with boosters like lollipops and color bombs for strategic depth. Candy Crush isn't just a game—it's a sugary escape that fits any moment."
+      }
+    ],
+    "slogan": "Sweet Puzzle Adventures",
     "size": 85,
     "reviews": 1400000,
     "ratingAvg": 4.5,
@@ -267,6 +432,35 @@
       { "name": "3 star", "count": 80000 },
       { "name": "4 star", "count": 300000 },
       { "name": "5 star", "count": 1010000 }
+    ]
+  },
+  {
+    "image": "/demo-app (4).webp",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 11,
+    "description": [
+      {
+        "para1": "Build a recommended profile. LinkedIn is the professional network empowering career growth, with tools to showcase skills, experience, and achievements. Optimize your profile with endorsements, recommendations, and multimedia to attract recruiters and opportunities. Connect with industry leaders and alumni for meaningful mentorship."
+      },
+      {
+        "para2": "Discover jobs tailored to your expertise, apply with one-click, and track applications seamlessly. Join Learning courses for upskilling in tech, leadership, and more. Engage in Groups and Events to network virtually or in-person, fostering collaborations that advance your goals."
+      },
+      {
+        "para3": "Share articles, insights, and updates to establish thought leadership, while Premium features unlock InMail and insights. From freelancers to executives, LinkedIn turns connections into careers. Build your professional story—one profile at a time."
+      }
+    ],
+    "slogan": "Build Your Career",
+    "size": 140,
+    "reviews": 600000,
+    "ratingAvg": 4.2,
+    "downloads": 800000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 350000 }
     ]
   }
 ]

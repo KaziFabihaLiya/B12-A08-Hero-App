@@ -1,26 +1,27 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
+import { addToStoreDB } from '../../utilities/addToDB';
+import formatNumber from '../../utilities/formatNumber';
+import InstalledList from '../pages/InstalledList/InstalledList';
 
-const formatNumber = (num) => {
-  if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
-  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
-  if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
-  return num;
-};
     
 const AppDetails = () => {
 
-
+    // each app details on this page
     const { appId } = useParams();
     const data = useLoaderData();
     const appid=parseInt(appId)
     
     const singleApp=data.find(app => app.id === appid)
-    console.log(singleApp);
-    const {title, image, description, companyName, downloads, ratingAvg, reviews, size} = singleApp;
+    //destructing
+    const {id, title, image, slogan, description, companyName, downloads, ratingAvg, reviews, size} = singleApp || {};
+    console.log(description)
+    const handleInstallApp = id => {
+        addToStoreDB(id);
+    }
     return (
-        <div className='bg-base-200'>
-            <div className=" m-[80px]">
+        <div className='pt-[80px] bg-base-200'>
+            <div className=" mx-[80px] mb-[80px]">
                 <div className="flex flex-col lg:flex-row ">
                     <img
                     src={image}
@@ -28,7 +29,7 @@ const AppDetails = () => {
                     />
                     <div className=''>
                     <h2 className="text-3xl text-[#001931] font-bold mb-2">
-                            {title}: <span>{description}</span>
+                            {title}: <span>{slogan}</span>
                     </h2>
                     <p className='text-[#00193180] mb-[30px] font-normal text-xl'>Developed by <span className='bg-clip-text text-transparent font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>{companyName}</span></p>
                     <div className='w-6xl border-t-1 border-solid border-gray-300'>
@@ -52,12 +53,30 @@ const AppDetails = () => {
                             <h2 className='font-extrabold text-[40px]'>{formatNumber(reviews)}</h2>
                         </div>
                     </div>
-                        <button className="btn bg-[#00D390] text-white align-left px-6 py-6 text-lg   mt-6 font-semibold">Install Now {size} MB</button>
+                        <Link to={'/'}><button onClick={()=> handleInstallApp(id)} className="btn bg-[#00D390] text-white align-left px-6 py-6 text-lg   mt-6 font-semibold">Install Now {size} MB</button></Link>
                     </div>
                 </div>
                 
             </div>
-            <div className='borderline border-t-2 border-solid border-gray-300 w-full'></div>
+            <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
+
+            </div>
+            <div className="charts">
+
+            </div>
+            <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
+                
+            </div>
+            <div>
+                <h2>Description</h2>
+                <div>
+                {
+                    description.map((para, index) =>{
+                    <p key={index}>{para[`para${index + 1}`]}</p> //para1,para2,para3 ke access korlam
+                })
+                }</div>
+            </div>
+
         </div>
     );
 };

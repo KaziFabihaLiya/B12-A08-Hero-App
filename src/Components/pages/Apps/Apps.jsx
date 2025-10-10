@@ -1,12 +1,12 @@
 
 import { Suspense } from 'react';
 import App from '../App/App';
+import AllApp from '../AllApp/AllApp';
+import { Link } from 'react-router';
 
 const Apps = ({data}) => {
 
-    
-    console.log(data.companyName)
-
+    // App card are looped through from here
     return (
         <div>
             <div className='mx-20 mt-20 mb-10 text-center justify-center'>
@@ -21,7 +21,7 @@ const Apps = ({data}) => {
             </Suspense>
             </div>
             <div className='mt-10 mb-20 justify-center flex'>
-                <button className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white "><img src="/github-mark-white.png" className='w-[30px] ' alt="" /> Show All</button>
+                <Link to='/allapps'><button className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white "><img src="/github-mark-white.png" className='w-[30px] ' alt="" /> Show All</button></Link>
             </div>
         </div>
     );

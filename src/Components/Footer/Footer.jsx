@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+            <footer className="footer footer-horizontal footer-center bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-primary-content p-10">
             <aside>
                 <img src="/logo.png" className='w-[5rem]' alt="" />
                 <a className="btn btn-ghost font-bold text-white text-base  to-[#9F62F2]">HERO.IO</a>
