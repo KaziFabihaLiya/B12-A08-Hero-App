@@ -3,8 +3,7 @@ import { Link, useLoaderData, useParams } from 'react-router';
 import { addToStoreDB } from '../../utilities/addToDB';
 import formatNumber from '../../utilities/formatNumber';
 import Description from '../pages/Description/Description';
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import Barchart from '../BarChart/BarChart';
+import Barcharttt from '../Barchart/Barcharttt';
 
     
 const AppDetails = () => {
@@ -71,7 +70,7 @@ const AppDetails = () => {
                 <h2>Ratings</h2> */}
             <div className="p-4 pt-10 charts mx-20 flex flex-col justify-start text-left align-left rounded-lg w-auto">
                 <h2 className="text-2xl pl-20 font-semibold text-gray-800 text-left align-left">Ratings</h2>
-                    <Barchart ratings={ratings}></Barchart>
+                    <Barcharttt ratings={ratings}></Barcharttt>
 
             </div>
 

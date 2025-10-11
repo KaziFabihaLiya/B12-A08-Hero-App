@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   BarChart,
   Bar,
@@ -10,9 +10,8 @@ import {
 } from "recharts";
 import formatNumber from "../../utilities/formatNumber";
 
-const Barchart = ({ ratings }) => {
-    console.log(ratings)
-  return (
+const Barcharttt = ({ratings}) => {
+    return (
     <div className="w-full h-86">
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
@@ -28,7 +27,7 @@ const Barchart = ({ ratings }) => {
           </BarChart>
         </ResponsiveContainer>
     </div>
-  );
+    );
 };
 
-export default Barchart;
+export default Barcharttt;
