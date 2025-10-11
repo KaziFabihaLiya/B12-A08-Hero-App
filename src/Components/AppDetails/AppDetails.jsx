@@ -25,8 +25,8 @@ const AppDetails = () => {
         addToStoreDB(id);
     }
     return (
-        <div className='pt-[80px] bg-base-200'>
-            <div className=" max-sm:mx-[40px] max-sm:mb-[40px] mx-[80px] mb-[80px] ">
+        <div className='pt-[80px] bg-base-200 max-sm:mx-auto'>
+            <div className=" max-sm:mx-[30px] max-sm:mb-[40px] mx-[80px] mb-[80px] ">
                 <div className="flex flex-col lg:flex-row ">
                     <img
                     src={image}
@@ -37,7 +37,8 @@ const AppDetails = () => {
                             {title}: <span>{slogan}</span>
                     </h2>
                     <p className='text-[#00193180] mb-[30px] font-normal text-xl'>Developed by <span className='bg-clip-text text-transparent font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>{companyName}</span></p>
-                    <div className='w-6xl border-t-1 border-solid border-gray-300'>
+
+                    <div className='w-6xl border-t-1 border-solid border-gray-300 max-sm:w-full'>
 
                     </div>
                     <div className='flex flex-row gap-16 mt-[30px]'>
@@ -63,7 +64,7 @@ const AppDetails = () => {
                 </div>
                 
             </div>
-            <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
+            <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] max-sm:mx-[40px] max-sm:w-[28rem] h-1 mb-3 '>
 
             </div>
             {/* <div className="charts">
@@ -75,8 +76,8 @@ const AppDetails = () => {
             </div>
 
             {/* </div> */}
-            <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
-                
+            <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] max-sm:mx-[40px] max-sm:w-[28rem] h-1 mb-3 '>
+
             </div>
             <div className='mx-20 pb-10 mt-10'>
                 <h2 className='font-semibold text-2xl mb-6'>Description</h2>

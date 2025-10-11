@@ -37,7 +37,7 @@ const Navbar = () => {
                         href="https://github.com/KaziFabihaLiya"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="md:mr-4 lg:mr-20 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-4 py-2 text-sm md:text-base"
+                        className="max-sm:mr-3 md:mr-4 lg:mr-20 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-4 py-2 text-sm md:text-base"
                     >
                         <img src="/github-mark-white.png" className="w-4 h-4 md:w-6 md:h-6 mr-2" alt="GitHub" />
                         Contribute
