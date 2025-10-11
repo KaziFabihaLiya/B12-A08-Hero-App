@@ -11,7 +11,7 @@ const NoAppFound = () => {
     return (
         <div>
             <div>
-                <img className='mx-auto w-2xl m-10' src="/App-Error.png" alt="" />
+                <img className='mx-auto w-xl m-10 max-sm:w-lg' src="/App-Error.png" alt="" />
                 <div className='mx-20 mt-10 mb-10 text-center justify-center'>
                     <h2 className='text-5xl font-bold'>OOPS, APP NOT FOUND</h2>
                     <p className='text-xl text-[#627382] font-normal mt-4'>The App you are requesting is not found on our system.  please try another apps</p>
