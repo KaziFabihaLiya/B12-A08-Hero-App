@@ -3,9 +3,10 @@
 
 # HERO.IO - App Store Showcase
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-brightgreen)](https://your-vercel-app.vercel.app)  
+[![Deployed on Netlify](https://img.shields.io/badge/Deployed-Netlify-brightgreen)](https://hero-app-io-lee.netlify.app/)  
 [![React](https://img.shields.io/badge/React-18.x-blue)](https://reactjs.org)  
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-blueviolet)](https://tailwindcss.com)  
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-blueviolet)](https://tailwindcss.com)
+[![DaisyUI](https://img.shields.io/badge/DaisyUI%20-blueviolet)](https://daisyui.com/)
 [![React Router](https://img.shields.io/badge/React%20Router-6.x-orange)](https://reactrouter.com)
 
 ## 📖 Overview
@@ -19,9 +20,12 @@ This project fulfills all core requirements for a full-stack-inspired frontend c
 - **Responsive Design**: Fully mobile-friendly with Tailwind CSS, adapting from mobile (2-column grids) to desktop (4-column layouts).
 - **State Management**: Uses React hooks for local app installations and sorting.
 - **Performance**: Suspense for loading states, toast notifications for user feedback.
-- **Deployment**: Hosted on Vercel/Netlify/Cloudflare with proper routing for SPA reloads.
+- **Deployment**: Hosted on Netlify with proper routing for SPA reloads.
 
 ## ✨ Features
+
+- Can be see Apps, Apps Details
+- Install App
 
 ### 🧱 Layout & Data Design
 
@@ -72,7 +76,7 @@ This project fulfills all core requirements for a full-stack-inspired frontend c
 - **Charts**: Recharts for review distributions.
 - **Utilities**: React Toastify for notifications; LocalStorage for persistence.
 - **Data**: Static JSON for app data.
-- **Deployment**: Vercel (with custom routing for SPA).
+- **Deployment**: Netlify (with custom routing for SPA).
 
 ## 🚀 Quick Start
 
@@ -90,7 +94,7 @@ This project fulfills all core requirements for a full-stack-inspired frontend c
    ```
 2. Install dependencies:
    ```
-   npm install
+   npm install 
    ```
 3. Start the dev server:
    ```
