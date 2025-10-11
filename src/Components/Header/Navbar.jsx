@@ -1,13 +1,14 @@
-import { Github } from 'lucide';
+
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
 
+
     const links = <>
-        <Link to='/'><li className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">Home</li></Link>
-        <Link to='/allapps'><li>Apps</li></Link>
-        <Link to='/installedList'><li>Installation</li></Link>
+        <NavLink to='/'><li className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">Home</li></NavLink>
+        <NavLink to='/allapps'><li>Apps</li></NavLink>
+        <NavLink to='/installedList'><li>Installation</li></NavLink>
     </>
     return (
         <div>
@@ -32,9 +33,16 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    
-                    <a className="mr-20 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white "><img src="/github-mark-white.png" className='w-[30px] ' alt="" /> Contribute</a>
+<div className="navbar-end">
+                    <a
+                        href="https://github.com/KaziFabihaLiya"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="md:mr-4 lg:mr-20 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-4 py-2 text-sm md:text-base"
+                    >
+                        <img src="/github-mark-white.png" className="w-4 h-4 md:w-6 md:h-6 mr-2" alt="GitHub" />
+                        Contribute
+                    </a>
                 </div>
             </div>
         </div>

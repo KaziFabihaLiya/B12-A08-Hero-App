@@ -6,6 +6,8 @@ import { Link } from 'react-router';
 
 const Apps = ({data}) => {
 
+    const trendingApps = data.slice(0, 8);
+
     // App card are looped through from here
     return (
         <div>
@@ -13,10 +15,10 @@ const Apps = ({data}) => {
                 <h2 className='text-5xl font-bold'>Trending Apps</h2>
                 <p className='text-xl text-[#627382] font-normal mt-4'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-4 gap-4 mx-20'>
+            <div className='grid grid-cols-4 gap-4 mx-20 max-sm:grid-cols-2'>
             <Suspense fallback={'Loading....'}>
                 {
-                    data.map((app)=> <App key={app.id} app={app}></App>)
+                    trendingApps.map((app)=> <App key={app.id} app={app}></App>)
                 }
             </Suspense>
             </div>

@@ -2,13 +2,15 @@ import React, { Suspense, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getInstalledApp } from '../../../utilities/addToDB';
 import InstallApp from '../InstallApp/InstallApp';
+import NoAppFound from '../NoAppFound/NoAppFound';
 
 const InstalledList = () => {
 
     //Installed All App List
     //State Declare
     const [installApp, setinstallApp] = useState([]);
-    const [sort, setSort] = useState([])
+    //const [sort, setSort] = useState([])
+
 
     const installData = useLoaderData();
     
@@ -33,6 +35,9 @@ const InstalledList = () => {
             setinstallApp(sortApps);
         }
     }
+    if (installApp.length === 0) {
+        return <NoAppFound></NoAppFound>;
+    }
     return (
         <div className='bg-[#D2D2D210] py-5'>
             <div className='mx-20 mt-20 mb-10 text-center justify-center'>
@@ -56,7 +61,11 @@ const InstalledList = () => {
             <div className='grid grid-cols-1 gap-4 mx-20 mt-4 mb-20 rounded-sm'>
                 <Suspense fallback="Loading....">
                     {
-                        installApp.map(app=> <InstallApp key={app.id} app={app}></InstallApp>)
+                        installApp.map(app=> <InstallApp 
+                            key={app.id} 
+                            app={app}
+                            onUninstall={() => setinstallApp(prev => prev.filter(a => a.id !== app.id))}> 
+                            </InstallApp>)
                     }
                 </Suspense>
             </div>

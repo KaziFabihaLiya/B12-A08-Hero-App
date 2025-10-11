@@ -5,8 +5,8 @@ const Banner = () => {
     
     return (
         <div className='w-full  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] justify-center text-center text-white'>
-            <h2 className='pt-20 pb-10 text-5xl font-bold'>Trusted by Millions, Built for You</h2>
-            <div className='flex flex-row justify-around pb-20 px-46'>
+            <h2 className='pt-20 pb-10 text-5xl font-bold max-sm:wrap max-sm:text-3xl'>Trusted by Millions, Built for You</h2>
+            <div className='flex flex-row justify-around pb-20 px-46 max-sm:flex-col max-sm:gap-10'>
                 <div>
                     <h4 className='font-normal text-xl text-[#FFFFFF80]'>Total Downloads</h4>
                     <h1 className='text-[64px] font-extrabold'>29.6M</h1>

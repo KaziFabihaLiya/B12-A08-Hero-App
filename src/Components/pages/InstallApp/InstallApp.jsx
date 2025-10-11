@@ -1,12 +1,20 @@
 import React from 'react';
 import formatNumber from '../../../utilities/formatNumber';
+import { removeFromDB } from '../../../utilities/addToDB';
 
 
-const InstallApp = ({app}) => {
+const InstallApp = ({app, onUninstall}) => {
 
     //Installed Each App card
 
-    const {image, title, slogan, downloads, ratingAvg, size} = app;
+    const {image, title, slogan, downloads, ratingAvg, size, id} = app;
+
+    const handleUninstall = () => {
+        removeFromDB(id);
+        if (onUninstall) {
+            onUninstall();
+        }
+    };
     return (
         <div>
             <div className="bg-white shadow-sm flex items-center justify-between p-3 border-gray-200">
@@ -37,7 +45,7 @@ const InstallApp = ({app}) => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center mr-2'><button className="btn bg-[#00D390] text-white  px-4 py-6 text-lg font-semibold">Uninstall</button>
+                <div className='flex items-center mr-2'><button onClick={handleUninstall} className="btn bg-[#00D390] text-white  px-4 py-6 text-lg font-semibold">Uninstall</button>
                 </div>
             </div>
         </div>

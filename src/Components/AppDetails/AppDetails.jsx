@@ -2,8 +2,9 @@ import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { addToStoreDB } from '../../utilities/addToDB';
 import formatNumber from '../../utilities/formatNumber';
-import InstalledList from '../pages/InstalledList/InstalledList';
 import Description from '../pages/Description/Description';
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import Barchart from '../BarChart/BarChart';
 
     
 const AppDetails = () => {
@@ -13,10 +14,14 @@ const AppDetails = () => {
     const data = useLoaderData();
     const appid=parseInt(appId)
     
-    const singleApp=data.find(app => app.id === appid)
+    const singleApp = data?.find(app => app.id === appid)
+    if(!singleApp){
+        return <errorPage></errorPage>
+    }
     //destructing
-    const {id, title, image, slogan, description, companyName, downloads, ratingAvg, reviews, size} = singleApp || {};
-    console.log(description)
+    const {id, title, image, slogan, description, ratings, companyName, downloads, ratingAvg, reviews, size} = singleApp || {};
+    console.log("singleApp",singleApp)
+
     const handleInstallApp = id => {
         addToStoreDB(id);
     }
@@ -26,7 +31,7 @@ const AppDetails = () => {
                 <div className="flex flex-col lg:flex-row ">
                     <img
                     src={image}
-                    className="w-[350px] rounded-lg shadow-2xl mr-[40px]"
+                    className="w-[350px] rounded-lg shadow-2xl mr-[40px] max-sm:mb-10"
                     />
                     <div className=''>
                     <h2 className="text-3xl text-[#001931] font-bold mb-2">
@@ -54,7 +59,7 @@ const AppDetails = () => {
                             <h2 className='font-extrabold text-[40px]'>{formatNumber(reviews)}</h2>
                         </div>
                     </div>
-                        <Link to={'/'}><button onClick={()=> handleInstallApp(id)} className="btn bg-[#00D390] text-white align-left px-6 py-6 text-lg   mt-6 font-semibold">Install Now {size} MB</button></Link>
+                        <Link to={'/installedList'}><button onClick={()=> handleInstallApp(id)} className="btn bg-[#00D390] text-white align-left px-6 py-6 text-lg   mt-6 font-semibold">Install Now {size} MB</button></Link>
                     </div>
                 </div>
                 
@@ -62,9 +67,15 @@ const AppDetails = () => {
             <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
 
             </div>
-            <div className="charts">
+            {/* <div className="charts">
+                <h2>Ratings</h2> */}
+            <div className="p-4 pt-10 charts mx-20 flex flex-col justify-start text-left align-left rounded-lg w-auto">
+                <h2 className="text-2xl pl-20 font-semibold text-gray-800 text-left align-left">Ratings</h2>
+                    <Barchart ratings={ratings}></Barchart>
 
             </div>
+
+            {/* </div> */}
             <div className='flex items-center border-t-2 mx-[80px] border-solid border-gray-300 w-[1528px] h-1 mb-3 '>
                 
             </div>

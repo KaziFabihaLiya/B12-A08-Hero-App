@@ -1,19 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-
-const ErrorPage = () => {
+const NoAppFound = () => {
 
     const navigate = useNavigate();
 
     const handleGoBack = () => {
         navigate(-1);
     };
-
-    //Error Page Design
+    
     return (
         <div>
             <div>
-                <img className='mx-auto w-2xl m-10' src="/error-404.png" alt="" />
+                <img className='mx-auto w-2xl m-10' src="/App-Error.png" alt="" />
                 <div className='mx-20 mt-10 mb-10 text-center justify-center'>
                     <h2 className='text-5xl font-bold'>Oops, page not found!</h2>
                     <p className='text-xl text-[#627382] font-normal mt-4'>The page you are looking for is not available.</p>
@@ -26,4 +24,4 @@ const ErrorPage = () => {
     );
 };
 
-export default ErrorPage;
+export default NoAppFound;
