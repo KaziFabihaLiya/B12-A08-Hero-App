@@ -125,15 +125,6 @@ src/
 └── Routes.jsx             # Router Config
 ```
 
-## 📸 Screenshots
-
-- **Home Page**: [Link to screenshot or embed image]
-- **All Apps with Search**: [Link]
-- **App Details with Chart**: [Link]
-- **Installations Page**: [Link]
-
-(Upload images to repo's `screenshots/` folder and link them here.)
-
 ## 🌐 Deployment
 
 - Deployed to [Vercel](https://your-app.vercel.app) (or Netlify/Cloudflare).

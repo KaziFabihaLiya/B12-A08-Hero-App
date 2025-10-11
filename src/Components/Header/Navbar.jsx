@@ -6,7 +6,7 @@ const Navbar = () => {
 
 
     const links = <>
-        <NavLink to='/'><li className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">Home</li></NavLink>
+        <NavLink to='/'><li className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] underline underline-offset-5 decoration-purple-900 decoration-2">Home</li></NavLink>
         <NavLink to='/allapps'><li>Apps</li></NavLink>
         <NavLink to='/installedList'><li>Installation</li></NavLink>
     </>
@@ -22,11 +22,10 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {links}
-                        
                     </ul>
                     </div>
                     <img src="/logo.png" className='w-[3.5rem] pl-[20px]' alt="" />
-                    <a className="btn btn-ghost font-bold pl-1 bg-clip-text text-transparent text-base bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">HERO.IO</a>
+                    <Link to={'/'}><a className="btn btn-ghost font-bold pl-1 bg-clip-text text-transparent text-base bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">HERO.IO</a></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-4">

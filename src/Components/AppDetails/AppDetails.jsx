@@ -26,11 +26,11 @@ const AppDetails = () => {
     }
     return (
         <div className='pt-[80px] bg-base-200'>
-            <div className=" mx-[80px] mb-[80px]">
+            <div className=" max-sm:mx-[40px] max-sm:mb-[40px] mx-[80px] mb-[80px] ">
                 <div className="flex flex-col lg:flex-row ">
                     <img
                     src={image}
-                    className="w-[350px] rounded-lg shadow-2xl mr-[40px] max-sm:mb-10"
+                    className="max-sm:mb-10 max-sm:w-[200px] max-sm:mr-[20px] w-[350px] rounded-lg shadow-2xl mr-[40px] "
                     />
                     <div className=''>
                     <h2 className="text-3xl text-[#001931] font-bold mb-2">
