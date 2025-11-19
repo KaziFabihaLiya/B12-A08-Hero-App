@@ -131,7 +131,7 @@ src/
 
 ## 🌐 Deployment
 
-- Deployed to [Vercel](https://your-app.vercel.app) (or Netlify/Cloudflare).
+- Deployed to [Netlify](https://hero-app-io-lee.netlify.app/).
 - SPA routing configured to handle direct URL access/reloads without 404s (via `public/_redirects` or Vercel rewrites).
 
 
